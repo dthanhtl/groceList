@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF1648AB17E1A4C8003FF3A3 /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1648A817E1A4C8003FF3A3 /* MyLogInViewController.m */; };
+		FF1648AC17E1A4C8003FF3A3 /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1648AA17E1A4C8003FF3A3 /* MySignUpViewController.m */; };
+		FF5302DF17DECB7000EC8410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5302DE17DECB7000EC8410 /* UIKit.framework */; };
+		FF5302E117DECB7000EC8410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5302E017DECB7000EC8410 /* Foundation.framework */; };
+		FF5302E317DECB7000EC8410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5302E217DECB7000EC8410 /* CoreGraphics.framework */; };
+		FF5302E917DECB7000EC8410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF5302E717DECB7000EC8410 /* InfoPlist.strings */; };
+		FF5302EB17DECB7000EC8410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5302EA17DECB7000EC8410 /* main.m */; };
+		FF5302EF17DECB7000EC8410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5302EE17DECB7000EC8410 /* AppDelegate.m */; };
+		FF5302F117DECB7000EC8410 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5302F017DECB7000EC8410 /* Default.png */; };
+		FF5302F317DECB7000EC8410 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5302F217DECB7000EC8410 /* Default@2x.png */; };
+		FF5302F517DECB7000EC8410 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5302F417DECB7000EC8410 /* Default-568h@2x.png */; };
+		FF5302F817DECB7000EC8410 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5302F617DECB7000EC8410 /* MainStoryboard.storyboard */; };
+		FF5302FB17DECB7000EC8410 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5302FA17DECB7000EC8410 /* ViewController.m */; };
+		FF53030217DECBED00EC8410 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030117DECBED00EC8410 /* FacebookSDK.framework */; };
+		FF53030417DECC9A00EC8410 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF53030317DECC9A00EC8410 /* FBUserSettingsViewResources.bundle */; };
+		FF53030617DECDF900EC8410 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030517DECDF900EC8410 /* AdSupport.framework */; };
+		FF53030817DECE0800EC8410 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030717DECE0800EC8410 /* libsqlite3.dylib */; };
+		FF53030A17DECE0C00EC8410 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030917DECE0C00EC8410 /* Accounts.framework */; };
+		FF53030C17DECE1700EC8410 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030B17DECE1700EC8410 /* Security.framework */; };
+		FF53030E17DECE1F00EC8410 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030D17DECE1F00EC8410 /* Social.framework */; };
+		FF53031017DED0B200EC8410 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53030F17DED0B200EC8410 /* AudioToolbox.framework */; };
+		FF53031217DED0BF00EC8410 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031117DED0BF00EC8410 /* CFNetwork.framework */; };
+		FF53031417DED0C500EC8410 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031317DED0C500EC8410 /* CoreLocation.framework */; };
+		FF53031617DED0D000EC8410 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031517DED0D000EC8410 /* libz.1.1.3.dylib */; };
+		FF53031817DED0DA00EC8410 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031717DED0DA00EC8410 /* MobileCoreServices.framework */; };
+		FF53031A17DED0DE00EC8410 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031917DED0DE00EC8410 /* QuartzCore.framework */; };
+		FF53031C17DED0E600EC8410 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031B17DED0E600EC8410 /* StoreKit.framework */; };
+		FF53031E17DED0EC00EC8410 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031D17DED0EC00EC8410 /* SystemConfiguration.framework */; };
+		FF53032017DED47000EC8410 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53031F17DED47000EC8410 /* Parse.framework */; };
+		FF53032517DED4F700EC8410 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53032417DED4F700EC8410 /* Comms.m */; };
+		FF53032817DF1A3100EC8410 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53032717DF1A3100EC8410 /* HomeViewController.m */; };
+		FF53032D17DF1A6600EC8410 /* FBShare.png in Resources */ = {isa = PBXBuildFile; fileRef = FF53032917DF1A6500EC8410 /* FBShare.png */; };
+		FF53032E17DF1A6600EC8410 /* FBShare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF53032A17DF1A6500EC8410 /* FBShare@2x.png */; };
+		FF53032F17DF1A6600EC8410 /* FBLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = FF53032B17DF1A6500EC8410 /* FBLogin.png */; };
+		FF53033017DF1A6600EC8410 /* FBLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF53032C17DF1A6500EC8410 /* FBLogin@2x.png */; };
+		FF625C5217E1A73F005052CA /* shaneexitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C4C17E1A73F005052CA /* shaneexitDown.png */; };
+		FF625C5317E1A73F005052CA /* shanefacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C4D17E1A73F005052CA /* shanefacebook.png */; };
+		FF625C5417E1A73F005052CA /* shanefacebookDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C4E17E1A73F005052CA /* shanefacebookDown.png */; };
+		FF625C5517E1A73F005052CA /* shanesignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C4F17E1A73F005052CA /* shanesignUp.png */; };
+		FF625C5617E1A73F005052CA /* shanesignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C5017E1A73F005052CA /* shanesignUpDown.png */; };
+		FF625C5717E1A73F005052CA /* shanesignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C5117E1A73F005052CA /* shanesignUpFieldBG.png */; };
+		FF625C5917E1A753005052CA /* shaneexit.png in Resources */ = {isa = PBXBuildFile; fileRef = FF625C5817E1A753005052CA /* shaneexit.png */; };
+		FF85D52F17E0214100D9FBA2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF85D52E17E0214100D9FBA2 /* MainViewController.m */; };
+		FF85D53517E0500D00D9FBA2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF85D53417E0500D00D9FBA2 /* SettingViewController.m */; };
+		FF8B211017E31E49006D7E45 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B210F17E31E48006D7E45 /* background.png */; };
+		FF8B211217E3202E006D7E45 /* user_password.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211117E3202E006D7E45 /* user_password.png */; };
+		FF8B211517E32192006D7E45 /* TextFieldForLoginVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */; };
+		FF8B211917E328AE006D7E45 /* facebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211817E328AE006D7E45 /* facebookIcon.png */; };
+		FF8B211B17E32916006D7E45 /* signUpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211A17E32916006D7E45 /* signUpIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF1648A717E1A4C8003FF3A3 /* MyLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogInViewController.h; sourceTree = "<group>"; };
+		FF1648A817E1A4C8003FF3A3 /* MyLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogInViewController.m; sourceTree = "<group>"; };
+		FF1648A917E1A4C8003FF3A3 /* MySignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignUpViewController.h; sourceTree = "<group>"; };
+		FF1648AA17E1A4C8003FF3A3 /* MySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignUpViewController.m; sourceTree = "<group>"; };
+		FF5302DB17DECB7000EC8410 /* shaneList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shaneList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5302DE17DECB7000EC8410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF5302E017DECB7000EC8410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF5302E217DECB7000EC8410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF5302E617DECB7000EC8410 /* shaneList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shaneList-Info.plist"; sourceTree = "<group>"; };
+		FF5302E817DECB7000EC8410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF5302EA17DECB7000EC8410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF5302EC17DECB7000EC8410 /* shaneList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shaneList-Prefix.pch"; sourceTree = "<group>"; };
+		FF5302ED17DECB7000EC8410 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF5302EE17DECB7000EC8410 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF5302F017DECB7000EC8410 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FF5302F217DECB7000EC8410 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FF5302F417DECB7000EC8410 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FF5302F717DECB7000EC8410 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FF5302F917DECB7000EC8410 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF5302FA17DECB7000EC8410 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF53030117DECBED00EC8410 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		FF53030317DECC9A00EC8410 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		FF53030517DECDF900EC8410 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FF53030717DECE0800EC8410 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		FF53030917DECE0C00EC8410 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FF53030B17DECE1700EC8410 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FF53030D17DECE1F00EC8410 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FF53030F17DED0B200EC8410 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF53031117DED0BF00EC8410 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FF53031317DED0C500EC8410 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FF53031517DED0D000EC8410 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		FF53031717DED0DA00EC8410 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FF53031917DED0DE00EC8410 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF53031B17DED0E600EC8410 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FF53031D17DED0EC00EC8410 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FF53031F17DED47000EC8410 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FF53032317DED4F700EC8410 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
+		FF53032417DED4F700EC8410 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
+		FF53032617DF1A3100EC8410 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FF53032717DF1A3100EC8410 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FF53032917DF1A6500EC8410 /* FBShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBShare.png; sourceTree = "<group>"; };
+		FF53032A17DF1A6500EC8410 /* FBShare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBShare@2x.png"; sourceTree = "<group>"; };
+		FF53032B17DF1A6500EC8410 /* FBLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBLogin.png; sourceTree = "<group>"; };
+		FF53032C17DF1A6500EC8410 /* FBLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBLogin@2x.png"; sourceTree = "<group>"; };
+		FF625C4C17E1A73F005052CA /* shaneexitDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shaneexitDown.png; sourceTree = "<group>"; };
+		FF625C4D17E1A73F005052CA /* shanefacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shanefacebook.png; sourceTree = "<group>"; };
+		FF625C4E17E1A73F005052CA /* shanefacebookDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shanefacebookDown.png; sourceTree = "<group>"; };
+		FF625C4F17E1A73F005052CA /* shanesignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shanesignUp.png; sourceTree = "<group>"; };
+		FF625C5017E1A73F005052CA /* shanesignUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shanesignUpDown.png; sourceTree = "<group>"; };
+		FF625C5117E1A73F005052CA /* shanesignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shanesignUpFieldBG.png; sourceTree = "<group>"; };
+		FF625C5817E1A753005052CA /* shaneexit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shaneexit.png; sourceTree = "<group>"; };
+		FF85D52D17E0214100D9FBA2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FF85D52E17E0214100D9FBA2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FF85D53317E0500D00D9FBA2 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FF85D53417E0500D00D9FBA2 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FF8B210F17E31E48006D7E45 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		FF8B211117E3202E006D7E45 /* user_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_password.png; sourceTree = "<group>"; };
+		FF8B211317E32192006D7E45 /* TextFieldForLoginVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldForLoginVIew.h; sourceTree = "<group>"; };
+		FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldForLoginVIew.m; sourceTree = "<group>"; };
+		FF8B211817E328AE006D7E45 /* facebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookIcon.png; sourceTree = "<group>"; };
+		FF8B211A17E32916006D7E45 /* signUpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF5302D817DECB7000EC8410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF53031E17DED0EC00EC8410 /* SystemConfiguration.framework in Frameworks */,
+				FF53031C17DED0E600EC8410 /* StoreKit.framework in Frameworks */,
+				FF53031A17DED0DE00EC8410 /* QuartzCore.framework in Frameworks */,
+				FF53031817DED0DA00EC8410 /* MobileCoreServices.framework in Frameworks */,
+				FF53031617DED0D000EC8410 /* libz.1.1.3.dylib in Frameworks */,
+				FF53031417DED0C500EC8410 /* CoreLocation.framework in Frameworks */,
+				FF53031217DED0BF00EC8410 /* CFNetwork.framework in Frameworks */,
+				FF53031017DED0B200EC8410 /* AudioToolbox.framework in Frameworks */,
+				FF53030E17DECE1F00EC8410 /* Social.framework in Frameworks */,
+				FF53030C17DECE1700EC8410 /* Security.framework in Frameworks */,
+				FF53030A17DECE0C00EC8410 /* Accounts.framework in Frameworks */,
+				FF53030817DECE0800EC8410 /* libsqlite3.dylib in Frameworks */,
+				FF53030617DECDF900EC8410 /* AdSupport.framework in Frameworks */,
+				FF5302DF17DECB7000EC8410 /* UIKit.framework in Frameworks */,
+				FF5302E117DECB7000EC8410 /* Foundation.framework in Frameworks */,
+				FF5302E317DECB7000EC8410 /* CoreGraphics.framework in Frameworks */,
+				FF53030217DECBED00EC8410 /* FacebookSDK.framework in Frameworks */,
+				FF53032017DED47000EC8410 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5302D217DECB7000EC8410 = {
+			isa = PBXGroup;
+			children = (
+				FF5302E417DECB7000EC8410 /* shaneList */,
+				FF5302DD17DECB7000EC8410 /* Frameworks */,
+				FF5302DC17DECB7000EC8410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF5302DC17DECB7000EC8410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5302DB17DECB7000EC8410 /* shaneList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF5302DD17DECB7000EC8410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF53031F17DED47000EC8410 /* Parse.framework */,
+				FF53031D17DED0EC00EC8410 /* SystemConfiguration.framework */,
+				FF53031B17DED0E600EC8410 /* StoreKit.framework */,
+				FF53031917DED0DE00EC8410 /* QuartzCore.framework */,
+				FF53031717DED0DA00EC8410 /* MobileCoreServices.framework */,
+				FF53031517DED0D000EC8410 /* libz.1.1.3.dylib */,
+				FF53031317DED0C500EC8410 /* CoreLocation.framework */,
+				FF53031117DED0BF00EC8410 /* CFNetwork.framework */,
+				FF53030F17DED0B200EC8410 /* AudioToolbox.framework */,
+				FF53030D17DECE1F00EC8410 /* Social.framework */,
+				FF53030B17DECE1700EC8410 /* Security.framework */,
+				FF53030917DECE0C00EC8410 /* Accounts.framework */,
+				FF53030717DECE0800EC8410 /* libsqlite3.dylib */,
+				FF53030517DECDF900EC8410 /* AdSupport.framework */,
+				FF53030317DECC9A00EC8410 /* FBUserSettingsViewResources.bundle */,
+				FF53030117DECBED00EC8410 /* FacebookSDK.framework */,
+				FF5302DE17DECB7000EC8410 /* UIKit.framework */,
+				FF5302E017DECB7000EC8410 /* Foundation.framework */,
+				FF5302E217DECB7000EC8410 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF5302E417DECB7000EC8410 /* shaneList */ = {
+			isa = PBXGroup;
+			children = (
+				FF53033117DF1A6A00EC8410 /* Images */,
+				FF53032617DF1A3100EC8410 /* HomeViewController.h */,
+				FF53032717DF1A3100EC8410 /* HomeViewController.m */,
+				FF53032217DED4D100EC8410 /* Utilites */,
+				FF53032117DED4C000EC8410 /* ViewController */,
+				FF5302ED17DECB7000EC8410 /* AppDelegate.h */,
+				FF5302EE17DECB7000EC8410 /* AppDelegate.m */,
+				FF5302F617DECB7000EC8410 /* MainStoryboard.storyboard */,
+				FF5302E517DECB7000EC8410 /* Supporting Files */,
+			);
+			path = shaneList;
+			sourceTree = "<group>";
+		};
+		FF5302E517DECB7000EC8410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF5302E617DECB7000EC8410 /* shaneList-Info.plist */,
+				FF5302E717DECB7000EC8410 /* InfoPlist.strings */,
+				FF5302EA17DECB7000EC8410 /* main.m */,
+				FF5302EC17DECB7000EC8410 /* shaneList-Prefix.pch */,
+				FF5302F017DECB7000EC8410 /* Default.png */,
+				FF5302F217DECB7000EC8410 /* Default@2x.png */,
+				FF5302F417DECB7000EC8410 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF53032117DED4C000EC8410 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF1648A717E1A4C8003FF3A3 /* MyLogInViewController.h */,
+				FF1648A817E1A4C8003FF3A3 /* MyLogInViewController.m */,
+				FF1648A917E1A4C8003FF3A3 /* MySignUpViewController.h */,
+				FF1648AA17E1A4C8003FF3A3 /* MySignUpViewController.m */,
+				FF5302F917DECB7000EC8410 /* ViewController.h */,
+				FF5302FA17DECB7000EC8410 /* ViewController.m */,
+				FF85D52D17E0214100D9FBA2 /* MainViewController.h */,
+				FF85D52E17E0214100D9FBA2 /* MainViewController.m */,
+				FF85D53317E0500D00D9FBA2 /* SettingViewController.h */,
+				FF85D53417E0500D00D9FBA2 /* SettingViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FF53032217DED4D100EC8410 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				FF53032317DED4F700EC8410 /* Comms.h */,
+				FF53032417DED4F700EC8410 /* Comms.m */,
+				FF8B211317E32192006D7E45 /* TextFieldForLoginVIew.h */,
+				FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+		FF53033117DF1A6A00EC8410 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B211A17E32916006D7E45 /* signUpIcon.png */,
+				FF8B211817E328AE006D7E45 /* facebookIcon.png */,
+				FF8B211117E3202E006D7E45 /* user_password.png */,
+				FF8B210F17E31E48006D7E45 /* background.png */,
+				FF625C5817E1A753005052CA /* shaneexit.png */,
+				FF625C4C17E1A73F005052CA /* shaneexitDown.png */,
+				FF625C4D17E1A73F005052CA /* shanefacebook.png */,
+				FF625C4E17E1A73F005052CA /* shanefacebookDown.png */,
+				FF625C4F17E1A73F005052CA /* shanesignUp.png */,
+				FF625C5017E1A73F005052CA /* shanesignUpDown.png */,
+				FF625C5117E1A73F005052CA /* shanesignUpFieldBG.png */,
+				FF53032917DF1A6500EC8410 /* FBShare.png */,
+				FF53032A17DF1A6500EC8410 /* FBShare@2x.png */,
+				FF53032B17DF1A6500EC8410 /* FBLogin.png */,
+				FF53032C17DF1A6500EC8410 /* FBLogin@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF5302DA17DECB7000EC8410 /* shaneList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5302FE17DECB7000EC8410 /* Build configuration list for PBXNativeTarget "shaneList" */;
+			buildPhases = (
+				FF5302D717DECB7000EC8410 /* Sources */,
+				FF5302D817DECB7000EC8410 /* Frameworks */,
+				FF5302D917DECB7000EC8410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shaneList;
+			productName = shaneList;
+			productReference = FF5302DB17DECB7000EC8410 /* shaneList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF5302D317DECB7000EC8410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Thanh Tran";
+			};
+			buildConfigurationList = FF5302D617DECB7000EC8410 /* Build configuration list for PBXProject "shaneList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF5302D217DECB7000EC8410;
+			productRefGroup = FF5302DC17DECB7000EC8410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF5302DA17DECB7000EC8410 /* shaneList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5302D917DECB7000EC8410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5302E917DECB7000EC8410 /* InfoPlist.strings in Resources */,
+				FF5302F117DECB7000EC8410 /* Default.png in Resources */,
+				FF5302F317DECB7000EC8410 /* Default@2x.png in Resources */,
+				FF5302F517DECB7000EC8410 /* Default-568h@2x.png in Resources */,
+				FF5302F817DECB7000EC8410 /* MainStoryboard.storyboard in Resources */,
+				FF53030417DECC9A00EC8410 /* FBUserSettingsViewResources.bundle in Resources */,
+				FF53032D17DF1A6600EC8410 /* FBShare.png in Resources */,
+				FF53032E17DF1A6600EC8410 /* FBShare@2x.png in Resources */,
+				FF53032F17DF1A6600EC8410 /* FBLogin.png in Resources */,
+				FF53033017DF1A6600EC8410 /* FBLogin@2x.png in Resources */,
+				FF625C5217E1A73F005052CA /* shaneexitDown.png in Resources */,
+				FF625C5317E1A73F005052CA /* shanefacebook.png in Resources */,
+				FF625C5417E1A73F005052CA /* shanefacebookDown.png in Resources */,
+				FF625C5517E1A73F005052CA /* shanesignUp.png in Resources */,
+				FF625C5617E1A73F005052CA /* shanesignUpDown.png in Resources */,
+				FF625C5717E1A73F005052CA /* shanesignUpFieldBG.png in Resources */,
+				FF625C5917E1A753005052CA /* shaneexit.png in Resources */,
+				FF8B211017E31E49006D7E45 /* background.png in Resources */,
+				FF8B211217E3202E006D7E45 /* user_password.png in Resources */,
+				FF8B211917E328AE006D7E45 /* facebookIcon.png in Resources */,
+				FF8B211B17E32916006D7E45 /* signUpIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF5302D717DECB7000EC8410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5302EB17DECB7000EC8410 /* main.m in Sources */,
+				FF5302EF17DECB7000EC8410 /* AppDelegate.m in Sources */,
+				FF5302FB17DECB7000EC8410 /* ViewController.m in Sources */,
+				FF53032517DED4F700EC8410 /* Comms.m in Sources */,
+				FF53032817DF1A3100EC8410 /* HomeViewController.m in Sources */,
+				FF85D52F17E0214100D9FBA2 /* MainViewController.m in Sources */,
+				FF85D53517E0500D00D9FBA2 /* SettingViewController.m in Sources */,
+				FF1648AB17E1A4C8003FF3A3 /* MyLogInViewController.m in Sources */,
+				FF1648AC17E1A4C8003FF3A3 /* MySignUpViewController.m in Sources */,
+				FF8B211517E32192006D7E45 /* TextFieldForLoginVIew.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF5302E717DECB7000EC8410 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5302E817DECB7000EC8410 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF5302F617DECB7000EC8410 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5302F717DECB7000EC8410 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF5302FC17DECB7000EC8410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF5302FD17DECB7000EC8410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF5302FF17DECB7000EC8410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hung Vo Nguyen (X9CQ3S2XF2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hung Vo Nguyen (X9CQ3S2XF2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shaneList/shaneList-Prefix.pch";
+				INFOPLIST_FILE = "shaneList/shaneList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3B10308B-7D73-496D-9A92-25BCEE8C0D9F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3B10308B-7D73-496D-9A92-25BCEE8C0D9F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF53030017DECB7000EC8410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hung Vo Nguyen (X9CQ3S2XF2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shaneList/shaneList-Prefix.pch";
+				INFOPLIST_FILE = "shaneList/shaneList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3B10308B-7D73-496D-9A92-25BCEE8C0D9F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF5302D617DECB7000EC8410 /* Build configuration list for PBXProject "shaneList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5302FC17DECB7000EC8410 /* Debug */,
+				FF5302FD17DECB7000EC8410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5302FE17DECB7000EC8410 /* Build configuration list for PBXNativeTarget "shaneList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5302FF17DECB7000EC8410 /* Debug */,
+				FF53030017DECB7000EC8410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF5302D317DECB7000EC8410 /* Project object */;
+}
