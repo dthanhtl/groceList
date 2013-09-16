@@ -56,6 +56,7 @@
 		FF8B211917E328AE006D7E45 /* facebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211817E328AE006D7E45 /* facebookIcon.png */; };
 		FF8B211B17E32916006D7E45 /* signUpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211A17E32916006D7E45 /* signUpIcon.png */; };
 		FFA6FF1017E6C03D001C3AEC /* exitLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA6FF0F17E6C03D001C3AEC /* exitLogin.png */; };
+		FFA6FF1317E716D6001C3AEC /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA6FF1217E716D6001C3AEC /* tableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,8 @@
 		FF8B211817E328AE006D7E45 /* facebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookIcon.png; sourceTree = "<group>"; };
 		FF8B211A17E32916006D7E45 /* signUpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpIcon.png; sourceTree = "<group>"; };
 		FFA6FF0F17E6C03D001C3AEC /* exitLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitLogin.png; sourceTree = "<group>"; };
+		FFA6FF1117E716D6001C3AEC /* tableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewController.h; sourceTree = "<group>"; };
+		FFA6FF1217E716D6001C3AEC /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				FF85D52E17E0214100D9FBA2 /* MainViewController.m */,
 				FF85D53317E0500D00D9FBA2 /* SettingViewController.h */,
 				FF85D53417E0500D00D9FBA2 /* SettingViewController.m */,
+				FFA6FF1117E716D6001C3AEC /* tableViewController.h */,
+				FFA6FF1217E716D6001C3AEC /* tableViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				FF85D53517E0500D00D9FBA2 /* SettingViewController.m in Sources */,
 				FF1648AB17E1A4C8003FF3A3 /* MyLogInViewController.m in Sources */,
 				FF1648AC17E1A4C8003FF3A3 /* MySignUpViewController.m in Sources */,
+				FFA6FF1317E716D6001C3AEC /* tableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
