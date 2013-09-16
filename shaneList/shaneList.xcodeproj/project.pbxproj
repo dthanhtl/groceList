@@ -53,9 +53,9 @@
 		FF85D53517E0500D00D9FBA2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF85D53417E0500D00D9FBA2 /* SettingViewController.m */; };
 		FF8B211017E31E49006D7E45 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B210F17E31E48006D7E45 /* background.png */; };
 		FF8B211217E3202E006D7E45 /* user_password.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211117E3202E006D7E45 /* user_password.png */; };
-		FF8B211517E32192006D7E45 /* TextFieldForLoginVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */; };
 		FF8B211917E328AE006D7E45 /* facebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211817E328AE006D7E45 /* facebookIcon.png */; };
 		FF8B211B17E32916006D7E45 /* signUpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B211A17E32916006D7E45 /* signUpIcon.png */; };
+		FFA6FF1017E6C03D001C3AEC /* exitLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA6FF0F17E6C03D001C3AEC /* exitLogin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,10 +116,9 @@
 		FF85D53417E0500D00D9FBA2 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		FF8B210F17E31E48006D7E45 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		FF8B211117E3202E006D7E45 /* user_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_password.png; sourceTree = "<group>"; };
-		FF8B211317E32192006D7E45 /* TextFieldForLoginVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldForLoginVIew.h; sourceTree = "<group>"; };
-		FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldForLoginVIew.m; sourceTree = "<group>"; };
 		FF8B211817E328AE006D7E45 /* facebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookIcon.png; sourceTree = "<group>"; };
 		FF8B211A17E32916006D7E45 /* signUpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpIcon.png; sourceTree = "<group>"; };
+		FFA6FF0F17E6C03D001C3AEC /* exitLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitLogin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +245,6 @@
 			children = (
 				FF53032317DED4F700EC8410 /* Comms.h */,
 				FF53032417DED4F700EC8410 /* Comms.m */,
-				FF8B211317E32192006D7E45 /* TextFieldForLoginVIew.h */,
-				FF8B211417E32192006D7E45 /* TextFieldForLoginVIew.m */,
 			);
 			name = Utilites;
 			sourceTree = "<group>";
@@ -255,6 +252,7 @@
 		FF53033117DF1A6A00EC8410 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FFA6FF0F17E6C03D001C3AEC /* exitLogin.png */,
 				FF8B211A17E32916006D7E45 /* signUpIcon.png */,
 				FF8B211817E328AE006D7E45 /* facebookIcon.png */,
 				FF8B211117E3202E006D7E45 /* user_password.png */,
@@ -346,6 +344,7 @@
 				FF8B211217E3202E006D7E45 /* user_password.png in Resources */,
 				FF8B211917E328AE006D7E45 /* facebookIcon.png in Resources */,
 				FF8B211B17E32916006D7E45 /* signUpIcon.png in Resources */,
+				FFA6FF1017E6C03D001C3AEC /* exitLogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +364,6 @@
 				FF85D53517E0500D00D9FBA2 /* SettingViewController.m in Sources */,
 				FF1648AB17E1A4C8003FF3A3 /* MyLogInViewController.m in Sources */,
 				FF1648AC17E1A4C8003FF3A3 /* MySignUpViewController.m in Sources */,
-				FF8B211517E32192006D7E45 /* TextFieldForLoginVIew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

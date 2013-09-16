@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicateLogin;
 @property (strong, nonatomic) IBOutlet UIButton *btnFB;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *logoutBtn;
+
 @end
 
 @implementation HomeViewController
@@ -34,8 +36,7 @@
     
   
 }
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+-(void)checkUser{
     if (![PFUser currentUser]) {
         // Customize the Log In View Controller
         MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
@@ -51,8 +52,15 @@
         
         // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
+//        [self.navigationController popToRootViewControllerAnimated:YES];
         //        [self.navigationController pushViewController:logInViewController animated:YES];
     }
+
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self checkUser];
     // Check if user is logged in
     
 }
@@ -68,6 +76,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)logoutPressed:(id)sender {
+    [PFUser logOut];
+    [self checkUser];
+}
+
 #pragma mark - PFLogInViewControllerDelegate
 
 // Sent to the delegate to determine whether the log in request should be submitted to the server.
