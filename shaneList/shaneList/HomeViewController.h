@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface HomeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 {
 
 
 }
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 -(void)checkUser;
 @end
