@@ -14,37 +14,63 @@
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-nK-KB9">
                                 <items>
-                                    <barButtonItem title="Item" id="SfZ-ry-abe"/>
+                                    <barButtonItem title="Logout" id="SfZ-ry-abe">
+                                        <connections>
+                                            <action selector="logoutPressed:" destination="2" id="KmZ-8I-bGL"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="user_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="TXo-p4-VEI">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="215" id="8HI-r6-A1f"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="dE2-IW-kFZ">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0VS-6h-h8E">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TXo-p4-VEI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="3Yt-oo-nSH"/>
                             <constraint firstItem="nZQ-nK-KB9" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3kK-3R-iPJ"/>
-                            <constraint firstItem="nZQ-nK-KB9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="BGm-fU-sTG"/>
-                            <constraint firstItem="TXo-p4-VEI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="250" id="PKH-c1-6US"/>
+                            <constraint firstItem="dE2-IW-kFZ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="CIS-Ue-GO7"/>
+                            <constraint firstItem="dE2-IW-kFZ" firstAttribute="top" secondItem="nZQ-nK-KB9" secondAttribute="bottom" type="default" id="Sff-x4-hgk"/>
+                            <constraint firstItem="dE2-IW-kFZ" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="ZxC-R4-ZTH"/>
+                            <constraint firstItem="nZQ-nK-KB9" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="h9b-CY-4Nr"/>
                             <constraint firstItem="nZQ-nK-KB9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="koR-Kt-DIC"/>
+                            <constraint firstItem="dE2-IW-kFZ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qdj-jn-G33"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eyC-X5-gSn"/>
+                    <connections>
+                        <outlet property="logoutBtn" destination="SfZ-ry-abe" id="HLi-bN-AQT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="35"/>
+            <point key="canvasLocation" x="588" y="33"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="user_password.png" width="550" height="150"/>
-    </resources>
+    <classes>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logoutPressed:"/>
+                <relationship kind="outlet" name="btnFB" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="indicateLogin" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="logoutBtn" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

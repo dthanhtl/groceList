@@ -10,8 +10,11 @@
 
 @interface MyLogInViewController ()
 @property (nonatomic, strong) UIImageView *fieldsBackground;
+@property (strong, nonatomic) UIButton *exitLoginBtn;
 @property (nonatomic,strong) UIImageView *loginTFImageView;
 @property (nonatomic,strong) UIView *loginTFView;
+@property (strong,nonatomic) UIActivityIndicatorView *indi;
+
 @end
 
 @implementation MyLogInViewController
@@ -19,13 +22,35 @@
 @synthesize fieldsBackground;
 @synthesize loginTFView = _logInTFView;
 @synthesize loginTFImageView = _loginTFImageView;
+@synthesize exitLoginBtn = _exitLoginBtn;
+@synthesize indi = _indi;
 
+
+-(void)loginAsGuest{
+    [self.indi startAnimating];
+    [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (error) {
+            [self.indi stopAnimating];
+            NSLog(@"Anonymous login failed.");
+        } else {
+            [self.indi stopAnimating];
+            [self dismissViewControllerAnimated:YES completion:NULL];
+            NSLog(@"Anonymous user logged in.");
+        }
+    }];
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.indi = [[UIActivityIndicatorView alloc] init];
+    [self.logInView addSubview:self.indi];
+    [self.logInView sendSubviewToBack:self.indi];
     [self.navigationController setNavigationBarHidden:YES];
     [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     [self.logInView setLogo:nil];
-    [self.logInView.dismissButton removeFromSuperview];
+    [self.logInView.dismissButton removeFromSuperview];    
+
     
     self.logInView.externalLogInLabel.textColor = [UIColor whiteColor];
     self.logInView.externalLogInLabel.text = @"You can also log in with:";
@@ -49,6 +74,14 @@
     fieldsBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LoginFieldBG.png"]];
     [self.logInView addSubview:self.fieldsBackground];
     [self.logInView sendSubviewToBack:self.fieldsBackground];
+    
+    self.exitLoginBtn = [[UIButton alloc] init];
+    [self.exitLoginBtn setImage:[UIImage imageNamed:@"exitLogin.png"] forState:UIControlStateNormal];
+    [self.exitLoginBtn setImage:[UIImage imageNamed:@"exitLogin.png"] forState:UIControlStateHighlighted];
+    [self.exitLoginBtn addTarget:self action:@selector(loginAsGuest) forControlEvents:UIControlEventTouchUpInside];
+    [self.logInView addSubview:self.exitLoginBtn];
+    [self.logInView sendSubviewToBack:self.exitLoginBtn];
+
     
     self.loginTFImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_password.png"]];
     [self.logInView addSubview:self.loginTFImageView];
@@ -81,6 +114,9 @@
     [self.logInView.passwordField setFrame:CGRectMake(35.0f, 195.0f, 250.0f, 50.0f)];
 //    [self.fieldsBackground setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 100.0f)];
     [self.loginTFImageView setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 100.0f)];
+    [self.exitLoginBtn setFrame:CGRectMake(230.0f, 6.0f, 85.0f, 45.0f)];
+    [self.indi setFrame:CGRectMake(230.0f, 6.0f, 85.0f, 45.0f)];
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
